@@ -1,16 +1,9 @@
 [
   {
-    "inboundTag": [
-      "api"
-    ],
-    "outboundTag": "api",
-    "type": "field"
-  },
-  {
     "domain": [
       "domain:speedtest.net"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "SpeedTest",
     "type": "field"
   },
@@ -18,7 +11,7 @@
     "type": "field",
     "port": "9339",
     "ruleTag": "Supercell: port",
-    "outboundTag": "direct"
+    "outboundTag": "proxy"
   },
   {
     "domain": [
@@ -28,7 +21,7 @@
       "domain:haydaygame.com",
       "domain:brawlstarsgame.com"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "Supercell: domains",
     "type": "field"
   },
@@ -41,7 +34,7 @@
       "domain:musixmatch.com",
       "domain:mxmcdn.net"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "Music",
     "type": "field"
   },
@@ -52,8 +45,8 @@
       "domain:vb.me",
       "domain:viberdns.com"
     ],
-		"ruleTag": "Viber",
-    "outboundTag": "direct"
+	"ruleTag": "Viber",
+    "outboundTag": "proxy"
   },
   {
     "type": "field",
@@ -62,8 +55,8 @@
       "domain:twitter.com",
       "domain:twimg.com"
     ],
-		"ruleTag": "X",
-    "outboundTag": "direct"
+	"ruleTag": "X",
+    "outboundTag": "proxy"
   },
   {
     "domain": [
@@ -76,7 +69,7 @@
       "domain:whatsapp.com",
       "domain:whatsapp.net"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "Meta",
     "type": "field"
   },
@@ -97,7 +90,7 @@
       "2001:b28:f23c::/48",
       "2a0a:f280::/32"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "Telegram: ips",
     "type": "field"
   },
@@ -118,7 +111,7 @@
       "domain:cdn-telegram.org",
       "domain:telegram-cdn.org"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "Telegram: domains",
     "type": "field"
   },
@@ -130,7 +123,7 @@
       "domain:ytimg.com",
       "domain:youtubei.googleapis.com"
     ],
-    "outboundTag": "direct",
+    "outboundTag": "proxy",
     "ruleTag": "YouTube",
     "type": "field"
   },
@@ -138,14 +131,14 @@
     "domain": [
       "regexp:\\.*$"
     ],
-    "outboundTag": "blocked",
+    "outboundTag": "direct",
     "type": "field"
   },
   {
     "ip": [
       "0.0.0.0/0"
     ],
-    "outboundTag": "blocked",
+    "outboundTag": "direct",
     "type": "field"
   }
 ]
