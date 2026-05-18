@@ -4,13 +4,13 @@
       "domain:speedtest.net"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "SpeedTest",
+    "remarks": "SpeedTest",
     "type": "field"
   },
   {
     "type": "field",
     "port": "9339",
-    "ruleTag": "Supercell: port",
+    "remarks": "Supercell: port",
     "outboundTag": "proxy"
   },
   {
@@ -22,7 +22,7 @@
       "domain:brawlstarsgame.com"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "Supercell: domains",
+    "remarks": "Supercell: domains",
     "type": "field"
   },
   {
@@ -35,7 +35,7 @@
       "domain:mxmcdn.net"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "Music",
+    "remarks": "Music",
     "type": "field"
   },
   {
@@ -45,7 +45,7 @@
       "domain:vb.me",
       "domain:viberdns.com"
     ],
-	"ruleTag": "Viber",
+	"remarks": "Viber",
     "outboundTag": "proxy"
   },
   {
@@ -55,7 +55,7 @@
       "domain:twitter.com",
       "domain:twimg.com"
     ],
-	"ruleTag": "X",
+	"remarks": "X",
     "outboundTag": "proxy"
   },
   {
@@ -70,7 +70,7 @@
       "domain:whatsapp.net"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "Meta",
+    "remarks": "Meta",
     "type": "field"
   },
   {
@@ -91,7 +91,7 @@
       "2a0a:f280::/32"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "Telegram: ips",
+    "remarks": "Telegram: ips",
     "type": "field"
   },
   {
@@ -112,7 +112,7 @@
       "domain:telegram-cdn.org"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "Telegram: domains",
+    "remarks": "Telegram: domains",
     "type": "field"
   },
   {
@@ -124,7 +124,7 @@
       "domain:youtubei.googleapis.com"
     ],
     "outboundTag": "proxy",
-    "ruleTag": "YouTube",
+    "remarks": "YouTube",
     "type": "field"
   },
   {
@@ -132,6 +132,7 @@
       "regexp:\\.*$"
     ],
     "outboundTag": "direct",
+	"remarks": "Direct: domains",
     "type": "field"
   },
   {
@@ -139,6 +140,7 @@
       "0.0.0.0/0"
     ],
     "outboundTag": "direct",
+	"remarks": "Direct: ips",
     "type": "field"
   }
 ]
