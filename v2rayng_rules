@@ -129,6 +129,43 @@
   },
   {
     "domain": [
+      "domain:doubleclick.net",
+      "domain:mc.yandex.ru",
+      "domain:mc.yandex.com",
+      "domain:appmetrica.yandex.net",
+      "domain:appmetrica.io",
+      "domain:an.yandex.ru",
+      "domain:bs.yandex.ru",
+      "domain:yandexadexchange.net",
+      "domain:ads.yandex.ru",
+      "domain:awaps.yandex.ru",
+      "domain:adfox.ru",
+      "domain:clck.yandex.ru",
+      "domain:amperity.yandex.ru",
+      "domain:webvisor.org",
+      "domain:strm.yandex.net",
+      "domain:yastatic.net",
+      "domain:ssp.rutube.ru",
+      "domain:goya.rutube.ru",
+      "domain:top-fwz1.mail.ru",
+      "domain:adriver.ru",
+      "domain:adlooxtracking.com",
+      "domain:weborama-tech.ru",
+      "domain:serving-sys.ru",
+      "domain:targetads.io",
+      "domain:adhigh.net",
+      "domain:gpm-ads.com",
+      "domain:adzuna.ru",
+      "domain:adzuna.com",
+      "domain:vigo.tech",
+      "domain:tns-counter.ru"
+    ],
+    "outboundTag": "block",
+    "remarks": "",
+    "type": "field"
+  },
+  {
+    "domain": [
       "regexp:\\.*$"
     ],
     "outboundTag": "direct",
