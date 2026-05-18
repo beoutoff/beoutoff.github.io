@@ -10,6 +10,7 @@
   {
     "type": "field",
     "port": "9339",
+    "network": "TCP",
     "remarks": "Supercell: port",
     "outboundTag": "proxy"
   },
