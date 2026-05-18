@@ -1,0 +1,151 @@
+[
+  {
+    "inboundTag": [
+      "api"
+    ],
+    "outboundTag": "api",
+    "type": "field"
+  },
+  {
+    "domain": [
+      "domain:speedtest.net"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "SpeedTest",
+    "type": "field"
+  },
+  {
+    "type": "field",
+    "port": "9339",
+    "ruleTag": "Supercell: port",
+    "outboundTag": "direct"
+  },
+  {
+    "domain": [
+      "domain:supercell.com",
+      "domain:clashroyale.com",
+      "domain:clashroyaleapp.com",
+      "domain:haydaygame.com",
+      "domain:brawlstarsgame.com"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "Supercell: domains",
+    "type": "field"
+  },
+  {
+    "domain": [
+      "domain:spotify.com",
+      "domain:soundcloud.com",
+      "domain:sndcdn.com",
+      "domain:soundcloud.cloud",
+      "domain:musixmatch.com",
+      "domain:mxmcdn.net"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "Music",
+    "type": "field"
+  },
+  {
+    "type": "field",
+    "ip": [
+      "domain:viber.com",
+      "domain:vb.me",
+      "domain:viberdns.com"
+    ],
+		"ruleTag": "Viber",
+    "outboundTag": "direct"
+  },
+  {
+    "type": "field",
+    "domain": [
+      "domain:x.com",
+      "domain:twitter.com",
+      "domain:twimg.com"
+    ],
+		"ruleTag": "X",
+    "outboundTag": "direct"
+  },
+  {
+    "domain": [
+      "domain:cdninstagram.com",
+      "domain:facebook.com",
+      "domain:fbsbx.com",
+      "domain:instagram.com",
+      "domain:fbcdn.net",
+      "domain:fb.com",
+      "domain:whatsapp.com",
+      "domain:whatsapp.net"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "Meta",
+    "type": "field"
+  },
+  {
+    "ip": [
+      "91.108.56.0/22",
+      "91.108.4.0/22",
+      "91.108.8.0/22",
+      "91.108.16.0/22",
+      "91.108.12.0/22",
+      "149.154.160.0/20",
+      "91.105.192.0/23",
+      "91.108.20.0/22",
+      "185.76.151.0/24",
+      "2001:b28:f23d::/48",
+      "2001:b28:f23f::/48",
+      "2001:67c:4e8::/48",
+      "2001:b28:f23c::/48",
+      "2a0a:f280::/32"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "Telegram: ips",
+    "type": "field"
+  },
+  {
+    "domain": [
+      "domain:t.me",
+      "domain:telegram.org",
+      "domain:telegram.me",
+      "domain:telegram.dog",
+      "domain:telegra.ph",
+      "domain:graph.org",
+      "domain:telesco.pe",
+      "domain:comments.app",
+      "domain:tg.dev",
+      "domain:tx.me",
+      "domain:tdesktop.com",
+      "domain:fragment.com",
+      "domain:cdn-telegram.org",
+      "domain:telegram-cdn.org"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "Telegram: domains",
+    "type": "field"
+  },
+  {
+    "domain": [
+      "domain:youtube.com",
+      "domain:googlevideo.com",
+      "domain:ggpht.com",
+      "domain:ytimg.com",
+      "domain:youtubei.googleapis.com"
+    ],
+    "outboundTag": "direct",
+    "ruleTag": "YouTube",
+    "type": "field"
+  },
+  {
+    "domain": [
+      "regexp:\\.*$"
+    ],
+    "outboundTag": "blocked",
+    "type": "field"
+  },
+  {
+    "ip": [
+      "0.0.0.0/0"
+    ],
+    "outboundTag": "blocked",
+    "type": "field"
+  }
+]
