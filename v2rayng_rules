@@ -40,7 +40,7 @@
   },
   {
     "type": "field",
-    "ip": [
+    "domain": [
       "domain:viber.com",
       "domain:vb.me",
       "domain:viberdns.com"
