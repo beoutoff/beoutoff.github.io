@@ -162,7 +162,7 @@
       "domain:tns-counter.ru"
     ],
     "outboundTag": "block",
-    "remarks": "",
+    "remarks": "AdBlock",
     "type": "field"
   },
   {
